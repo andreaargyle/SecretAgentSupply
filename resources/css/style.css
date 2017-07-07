@@ -1,0 +1,110 @@
+/* Base Code */
+html {
+  font-size: 18px;
+  font-family: "Helvetica", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  align-content: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+/* Header */
+header img  {
+  height: 1.5rem;
+  margin: 0.5rem;
+}
+
+header span {
+  font-size: 1rem;
+  margin: 0.66rem 0.5rem;
+}
+
+/* Hero Banner */
+.hero {
+  background-image: url("../images/moto.jpeg");
+  background-size: cover;
+  height: 25rem;
+  width: 100%;
+}
+
+.banner {
+  width: 20rem;
+  height: auto;
+  flex-direction: column;
+  float: left;
+  align-content: center;
+}
+
+h2 {
+  font-style: bold;
+  font-size: 1rem;
+  margin: 2rem auto 0.25rem 3rem;
+}
+
+h1 {
+  font-style: bold;
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+
+/* Navigation */
+nav {
+  background-color: firebrick;
+  width: 100%;
+}
+
+nav .container {
+  justify-content: space-around;
+  padding: 0.75rem 0;
+}
+
+/* Products */
+.product {
+  border: 4px solid black;
+  margin: 3rem auto;
+  width: 30%;
+  flex-direction: column;
+}
+
+.product img {
+  max-width: 9rem;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.identification {
+  text-align: center;
+  padding: 0.5rem auto;
+}
+
+/* Info Section */
+.info {
+  justify-content: space-between;
+  margin: 3rem auto 4rem auto;
+}
+
+.location,
+.hours {
+  width: 35%;
+  padding: 1rem auto 1rem 2rem;
+}
+
+/* Footer Section */
+
+footer {
+  height: 5rem;
+  text-aligned: left;
+}
