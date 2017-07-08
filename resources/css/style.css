@@ -1,17 +1,25 @@
 /* Base Code */
 html {
   font-size: 18px;
+  background-color: white;
 }
 
 body {
   font-family: "Helvetica", sans-serif;
   line-height: 1.4em;
 }
+
 .container {
   display: flex;
   max-width: 960px;
   margin: 0 auto;
   align-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 /* Header */
@@ -33,6 +41,8 @@ header span {
 /* Hero Banner */
 .hero {
   background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   height: 25em;
   width: 100%;
@@ -56,6 +66,23 @@ h1 {
   font-size: 2em;
   line-height: 1.2em;
   margin: 0.25em 0;
+}
+
+@media only screen and (max-width: 470px) {
+  .hero {
+    height: 15em;
+  }
+  .banner {
+    width: 100%;
+    padding: 1em 2em;
+    top: 10em;
+  }
+  .banner h4 {
+    font-size: 0.77rem;
+  }
+  .banner h1 {
+    font-size: 1rem;
+  }
 }
 
 /* Navigation */
@@ -128,6 +155,20 @@ nav ul {
     display: none;
   }
 }
+
+@media only screen and (max-width: 470px) {
+  .products,
+  .business-info {
+    flex-wrap: wrap;
+  }
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+  .product.watch {
+    display: none;
+  }
+}
 /* Info Section */
 .info {
   width: 35%;
@@ -141,6 +182,12 @@ nav ul {
   padding: 1em 2em;
 }
 
+@media only screen and (max-width: 470px) {
+  .info {
+    width: 90%;
+    margin: auto;
+  }
+}
 
 /* Footer Section */
 
@@ -149,4 +196,10 @@ footer {
   color: white;
   padding: 5em 0;
   margin-top: 4em;
+}
+
+@media only screen and (max-width: 470px) {
+  footer .container {
+    justify-content: center;
+  }
 }
